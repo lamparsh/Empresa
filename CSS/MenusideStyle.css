@@ -1,0 +1,77 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: url('../Img/jps2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed; /* Keep the sidebar fixed while scrolling */
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%; /* Full screen height */
+    background: rgba(0, 123, 255, 0.9); /* Primary blue with transparency */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    overflow-y: auto; /* Add scrolling if content overflows */
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(10px); /* Slight slide effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .sidebar h2 {
+        font-size: 1.5em;
+    }
+
+    .sidebar ul li a {
+        font-size: 1em;
+    }
+
+    .main-content {
+        margin-left: 200px;
+        padding: 15px;
+    }
+}

@@ -1,0 +1,123 @@
+h1 {
+    text-align: center;
+    color: #000000;
+    margin: 20px 0;
+    font-size: 2.5em;
+}
+
+.form-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #a1c8ec;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-section h3 {
+    margin-bottom: 15px;
+    color: #34495e;
+    font-size: 1.5em;
+    border-bottom: 2px solid #0e0e0e;
+    padding-bottom: 5px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    color: #2c3e50;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logo {
+    display: block;
+    margin: 15px auto; /* Reduce ligeramente el margen */
+    max-width: 100px; /* Tamaño máximo más pequeño */
+    width: 100%;
+    height: auto; /* Mantiene la proporción del logo */
+    border-radius: 10px; /* Bordes redondeados suaves */
+    box-shadow: 0 3px 8px rgba(50, 50, 93, 0.15); /* Sombra más sutil y profesional */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave en hover */
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Efecto de zoom más sutil */
+    box-shadow: 0 5px 12px rgba(50, 50, 93, 0.25); /* Intensifica la sombra con un toque profesional */
+}
+
+
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.form-container button[type="submit"] {
+    background-color: #25a159;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #208b4d;
+}
+
+#lotsAffectedFields .input-group {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #070707;
+}
+
+input[type="file"] {
+    border: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}

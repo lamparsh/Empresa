@@ -1,0 +1,87 @@
+/* Main container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    justify-content: center;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.header .logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #4CAF50;
+}
+
+/* Section titles */
+h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid black;  /* Added border to table */
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 2px solid black;  /* Added black border to table cells */
+    font-size: 16px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+/* Section container */
+.section {
+    margin-bottom: 40px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .header h2 {
+        font-size: 28px;
+    }
+
+    th, td {
+        font-size: 14px;
+    }
+}
